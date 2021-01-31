@@ -10,7 +10,7 @@ braches:
 before script:
     - dotnet restore
 script:
-    - dotnet build Travis_test_API/
+    - dotnet build Travis_test_API/Travis_test_API/
 # branches:
 #     only: 
 #         - master
