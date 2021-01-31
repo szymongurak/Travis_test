@@ -1,16 +1,18 @@
 language: csharp
-os: linux
-dist: xenial
-sudo: true
 mono: none
-dotnet: 3.1.1
+sudo: required
+dist: xenial
+dotnet: 3.1.100
 braches:
     - only:
         - master 
 # before script:
 #     - dotnet restore Travis_test_API/Travis_test_API/
+before_script:
+    -chmod -R a+x scripts
+
 script:
-    - dotnet build Travis_test_API/
+    - dotnet build ./Travis_test_API/
 # branches:
 #     only: 
 #         - master
