@@ -7,10 +7,10 @@ dotnet: 3.1.1
 braches:
     - only:
         - master 
-before script:
-    - dotnet restore Travis_test_API/Travis_test_API/
+# before script:
+#     - dotnet restore Travis_test_API/Travis_test_API/
 script:
-    - dotnet build Travis_test_API/Travis_test_API/
+    - dotnet build Travis_test_API/
 # branches:
 #     only: 
 #         - master
