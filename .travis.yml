@@ -9,7 +9,7 @@ braches:
 # before script:
 #     - dotnet restore Travis_test_API/Travis_test_API/
 before_script:
-    -chmod -R a+x scripts
+    - chmod -R a+x scripts
 
 script:
     - dotnet build ./Travis_test_API/
