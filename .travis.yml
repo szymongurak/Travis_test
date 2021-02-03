@@ -13,6 +13,7 @@ braches:
 
 script:
     - dotnet build ./Travis_test_API/
+    - dotnet test ./Travis_test_API/
 # branches:
 #     only: 
 #         - master
